@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Cosplay Otaku</title>
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon.png?v=2">
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png?v=2">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="start-screen" aria-live="polite" aria-label="Tela inicial">
+    <img
+      class="start-avatar-floating start-avatar-floating-left"
+      src="assets/images/start-avatar-floating-left.png"
+      alt="Avatar flutuante colegial"
+    >
+    <img
+      class="start-avatar-floating start-avatar-floating-right"
+      src="assets/images/start-avatar-floating-right.png"
+      alt="Avatar flutuante sailor moon"
+    >
+
+    <div class="start-screen-panel">
+      <img
+        class="start-avatar-deco start-avatar-left"
+        src="assets/images/start-avatar-colegial.png"
+        alt="Avatar colegial"
+      >
+      <img
+        class="start-avatar-deco start-avatar-right"
+        src="assets/images/start-avatar-sailor-moon.png"
+        alt="Avatar Sailor Moon"
+      >
+
+      <img class="start-logo" src="assets/images/cosplay otaku.png" alt="Logo Cosplay Otaku">
+      <h1 class="start-title">COSPLAY OTAKU</h1>
+
+      <div class="start-dialog-card">
+        <p class="start-message-text"></p>
+      </div>
+
+      <button class="start-enter-button" type="button" aria-label="Iniciar jogo">
+        ENTER
+      </button>
+    </div>
+  </section>
+
+  <main class="world">
+    <img class="logo" src="assets/images/cosplay otaku.png" alt="Logo Cosplay Otaku">
+    <div class="lives" aria-label="Vidas">
+      <img class="heart" data-heart="1" src="assets/images/coracao.png" alt="Coracao 1">
+      <img class="heart" data-heart="2" src="assets/images/coracao.png" alt="Coracao 2">
+      <img class="heart" data-heart="3" src="assets/images/coracao.png" alt="Coracao 3">
+    </div>
+
+    <div class="avatar"></div>
+
+    <div class="block brick b1"></div>
+    <div class="question-wrapper q1">
+      <div class="coin hidden"></div>
+      <div class="block coin-block"></div>
+    </div>
+    <div class="block brick b3"></div>
+    <div class="block brick b4"></div>
+    <div class="question-wrapper q2">
+      <div class="coin hidden"></div>
+      <div class="block coin-block"></div>
+    </div>
+
+    <div class="block brick b8"></div>
+    <div class="block brick b6"></div>
+    <div class="question-wrapper q3">
+      <div class="coin hidden"></div>
+      <div class="block coin-block"></div>
+    </div>
+    <div class="block brick b7"></div>
+    <div class="block brick b9"></div>
+
+    <div class="block brick b10"></div>
+    <div class="block brick b11"></div>
+    <div class="question-wrapper q4">
+      <div class="coin hidden"></div>
+      <div class="block coin-block"></div>
+    </div>
+    <div class="block brick b12"></div>
+    <div class="block brick b13"></div>
+
+    <div class="ground"></div>
+
+    <section class="game-over-screen" aria-live="polite">
+      <div class="game-over-art-frame">
+        <img class="game-over-art" src="assets/images/game-over-reference.png" alt="Tela de Game Over">
+        <span
+          class="game-over-enter-hitbox"
+          role="button"
+          tabindex="0"
+          aria-label="Reiniciar jogo"
+        ></span>
+      </div>
+    </section>
+
+    <img
+      class="commands-card"
+      src="assets/images/card comandos.png"
+      alt="Comandos: setas esquerda e direita para mover, seta para cima para pular"
+    >
+
+    <div class="coin-score" aria-live="polite" aria-label="Contador de moedas: 1">
+      <canvas class="coin-score-canvas" width="162" height="76"></canvas>
+    </div>
+  </main>
+  <audio class="background-music" loop preload="auto" hidden aria-hidden="true">
+    <source src="assets/audio/One_Last_Gold_Coin.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
